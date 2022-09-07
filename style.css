@@ -7,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+#ttt{
+    background-color: #a7694c;
+}
+
 .text-replace{
     font-size: 22px;
     width: 80%;
