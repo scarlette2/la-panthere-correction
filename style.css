@@ -7,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+#ttt{
+    background-color: #472d21;
+}
+
 .text-replace{
     font-size: 22px;
     width: 80%;
@@ -103,7 +107,6 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -145,7 +148,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(10, 10, 10);
 }
 
 .d-bloc .a-btn:hover,
@@ -452,6 +455,7 @@ nav .caret {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .text-center{
@@ -754,7 +758,7 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #0a0a0a!important;
 }
 
 .portfolio-thumb {
@@ -792,16 +796,16 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #be7553;
 }
 
 .tc-white {
-    color: #FFF!important;
+    color: #ffffff!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #0e0d0d!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -828,10 +832,6 @@ h4 {
 .icon-dark-slate-blue {
     color: #364577!important;
     border-color: #364577!important;
-}
-
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
@@ -869,13 +869,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -893,10 +893,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -905,8 +902,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
